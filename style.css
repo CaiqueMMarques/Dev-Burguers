@@ -6,10 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     height: 100vh;
     background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
 }
+
 .container {
     width: 100%;
     padding-top: 20px;
@@ -18,12 +20,14 @@ body {
     gap: 20px;
     padding-bottom: 80px;
 }
+
 .card img {
     width: 100%;
     height: 120px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 section {
     width: 100%;
     display: grid;
@@ -32,42 +36,48 @@ section {
     justify-content: center;
     align-items: start;
 }
+
 .card {
     background: rgba(255, 255, 255, 0.05);
     width: 150px;
     display: flex;
     flex-direction: column;
-    border: 3px solid rgba(148, 163,184, 0.25);
+    border: 3px solid rgba(148, 163, 184, 0.25);
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow:  0 10px 30px rgba(0,0,0,0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.95);
     transition: 0.35s ease;
 }
+
 .card:hover {
     transform: translateY(-8px);
     border-color: #8b5cf6;
     box-shadow: 0 14px 35px rgba(139, 92, 246, 0.25);
 }
+
 a {
     text-decoration: none;
 }
+
 h2 {
     font-size: 15px;
     color: #e5e7eb;
     font-weight: 500;
 }
+
 p {
     font-size: 20px;
     font-weight: 700;
     color: #22c55e;
 }
+
 button {
     width: 120px;
     padding: 10px 0;
     background: linear-gradient(135deg, #7c3aed, #2563eb);
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
@@ -75,10 +85,12 @@ button {
     box-shadow: 0 8px 20px rgba(37, 97, 237, 0.25);
     transition: all 0.3s ease;
 }
+
 button:hover {
     transform: translateY(-4px) scale(1.03);
     box-shadow: 0 12px 28px rgba(14, 58, 237, 0.35);
 }
+
 button:active {
     transition: all 0.2s ease;
     transform: scale(0.98);
@@ -90,13 +102,90 @@ button:active {
     position: absolute;
     left: 43%;
     background: rgba(255, 255, 255, 0.05);
-    border: 3px solid rgba(148, 163,184, 0.25);
+    border: 3px solid rgba(148, 163, 184, 0.25);
     position: absolute;
     top: 30%;
 }
+
 .paragraph-sum {
     font-size: 20px;
     text-align: center;
     color: #e5e7eb;
     padding-top: 25px;
+}
+
+@media screen and (max-width: 715px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    }
+
+    section {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        justify-content: center;
+        align-items: start;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 20px 80px 20px;
+
+    }
+
+    button {
+        padding: 10px 0;
+        background: linear-gradient(135deg, #7c3aed, #2563eb);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(37, 97, 237, 0.25);
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid rgba(148, 163, 184, 0.25);
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.95);
+    }
+
+    .card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 20px 80px 20px;
+    }
+
+    .total-sum {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        left: 25%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 3px solid rgba(148, 163, 184, 0.25);
+        position: absolute;
+        top: 30%;
+    }
+
 }
